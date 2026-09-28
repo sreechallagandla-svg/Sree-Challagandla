@@ -4,9 +4,11 @@ void Toh(int n,char source ,char Aux,char dest)
 if(n==1)
 {
 printf("move 1 from %c to %c", source , dest);
+return;
 }
 Toh(n-1,source,dest,Aux);
 printf("move %d from %c to %c", n, source, dest);
+Toh(n-1,Aux,source,dest);
 }
 int main() {
 int a;
