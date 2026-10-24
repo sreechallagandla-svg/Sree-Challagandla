@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Random HTML Practice</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f8ff;
+            text-align: center;
+            padding: 50px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            width: 300px;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px gray;
+        }
+
+        button {
+            background: royalblue;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: darkblue;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1>Hello World!</h1>
+        <p>Click the button to change the text.</p>
+
+        <button onclick="changeText()">Click Me</button>
+
+        <h3 id="message">Welcome!</h3>
+    </div>
+
+    <script>
+        function changeText() {
+            document.getElementById("message").innerHTML =
+                "You clicked the button!";
+        }
+    </script>
+
+</body>
+</html>
